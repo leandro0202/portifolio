@@ -30,6 +30,12 @@ header{
     align-items: center;
     
 }
+header .head--container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+}
 .icon-head{
     width: 1140px;
     max-width: 1140px;
@@ -43,6 +49,21 @@ header{
 .icon-head img{
     width: 20px;
 }
+.icon-head-button{
+    text-transform: uppercase;
+    border: 3px solid #5c4bb3;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+  
+}
+.icon-head-button a{
+    text-decoration: none;
+    color: #a6aaad;
+}
+
 header .header-start{
     width: 1140px;
     max-width: 1140px;
@@ -119,7 +140,7 @@ header .button img{
     padding: 0px 20px;
 }
 .header-links a img{
-    width: 60px;
+    width: 40px;
 
 }
 @keyframes topButton {

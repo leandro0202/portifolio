@@ -11,10 +11,6 @@ function typeWriter(elemento, temp) {
     });
 
 }
-
-typeWriter(frase, 75)
-typeWriter(frase2, 300)
-
 function hoverImage() {
     const img = document.querySelectorAll('.header-links a img').forEach((elemento, indice) => {
         if(indice == 0){
@@ -24,17 +20,25 @@ function hoverImage() {
             elemento.addEventListener("mouseout", () => {
                 elemento.src = 'assets/img/github.png'
             })
-        }else{
+        }else if(indice == 1){
             elemento.addEventListener("mouseenter", () => {
                 elemento.src = 'assets/img/linkdin2.png'
             })
             elemento.addEventListener("mouseout", () => {
                 elemento.src = 'assets/img/linkdin.png'
             })
+        }else{
+            elemento.addEventListener("mouseenter", () => {
+                elemento.src = 'assets/img/whatsapp2.png'
+            })
+            elemento.addEventListener("mouseout", () => {
+                elemento.src = 'assets/img/whatsapp.png'
+            })
         }
   
     })
 }
 
-
+typeWriter(frase, 75)
+typeWriter(frase2, 300)
 hoverImage()
