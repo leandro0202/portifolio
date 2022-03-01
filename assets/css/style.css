@@ -63,8 +63,6 @@ header  .header-start .photo{
 }
 header  .header-start .title{
     grid-column: 2fr;
-    margin: 0;
-    padding: 0;
     padding-top: 30px;
 }
 header .frase1{
@@ -81,7 +79,8 @@ header .frase1::after{
 
 }
 header .frase2{
-    font-size: 6em;
+    margin: 0;
+    font-size: 60px;
     color: #5c4bb3;
     font-family: 'Share Tech Mono', monospace;
     font-weight: 700;
@@ -98,26 +97,30 @@ header .container-button{
 
  
 }
-header .container-button :first-child{
-    width: 150px;
-    text-align: center;
-    font-size: 25px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #a6aaad;
-    font-family: 'Share Tech Mono', monospace;
-}
 header .button{
-    color: #fff;
-    width: 150px;
-    height: 40px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border-radius: 50px;
-   font-size: 20px;
-   font-weight: bold;
-   background-color: #515151;
+    text-transform: uppercase;
+    border: 2px solid #5c4bb3;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+header .button img{
+    width: 12px;
+}
+.header-links{
+    width: 1140px;
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.header-links a{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+.header-links a img{
+    width: 60px;
+
 }
 @keyframes topButton {
     0%{-webkit-transform: rotateZ(0deg);
