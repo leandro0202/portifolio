@@ -1,0 +1,6 @@
+
+-colocar os trabalhos no portifólio dinamicamente
+-objeto com foto, titulo e data
+- função para crias os elementos dinamicamente no htlm
+- setar classes  css dinamicamente
+- 

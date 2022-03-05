@@ -1,5 +1,5 @@
-const frase = document.querySelector('.frase1')
-const frase2 = document.querySelector('.frase2')
+const frase = pergarElemento('.frase1')
+const frase2 = pergarElemento('.frase2')    
 
 
 
@@ -38,6 +38,28 @@ function hoverImage() {
   
     })
 }
+function pergarElemento(elemento){
+    return  document.querySelector(elemento)
+}
+function pergarElementos(elemento){
+     return document.querySelectorAll(elemento);
+}
+function creatElement(elemento){
+      return document.createElement(elemento)
+}
+
+works.map((itens, indice) =>{
+
+       const cardWorks = pergarElemento('.model .card-works').cloneNode(true)
+
+       cardWorks.querySelector('.card-works-img img').src = itens.img
+       cardWorks.querySelector('.card-works-text h2').textContent = itens.title
+       cardWorks.querySelector('.card-works-text p').textContent = itens.date
+
+       pergarElemento('.container-works').append(cardWorks)
+})
+
+
 
 typeWriter(frase, 75)
 typeWriter(frase2, 300)
